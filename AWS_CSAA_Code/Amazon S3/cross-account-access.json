@@ -6,7 +6,7 @@
       {
         "Effect": "Allow",
         "Principal": {
-          "AWS": "arn:aws:iam::AccountB:user/AccountBUserName"
+          "AWS": "arn:aws:iam::821791694623:user/John"
         },
         "Action": "sts:AssumeRole"
       }
@@ -33,7 +33,7 @@
                 "s3:GetBucketLocation"
             ],
             "Effect": "Allow",
-            "Resource": "arn:aws:s3:::AccountABucketName"
+            "Resource": "arn:aws:s3:::aws-sa-labs01"
         },
         {
             "Effect": "Allow",
@@ -41,7 +41,7 @@
                 "s3:GetObject",
                 "s3:PutObject"
             ],
-            "Resource": "arn:aws:s3:::AccountABucketName/*"
+            "Resource": "arn:aws:s3:::aws-sa-labs01/*"
         }
     ]
 }
@@ -53,8 +53,8 @@
     "Statement": {
       "Effect": "Allow",
       "Action": "sts:AssumeRole",
-      "Resource": "arn:aws:iam::AccountA:role/AccountARole"
+      "Resource": "arn:aws:iam::480854362041:role/Cross_Account_S3"
     }
   }
 
-  
+ https://821791694623.signin.aws.amazon.com/console
